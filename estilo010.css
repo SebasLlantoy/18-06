@@ -1,0 +1,30 @@
+/* estilo010.css */
+
+.my-element {
+    /* Border Properties */
+    border-top: 2px solid blue;
+    border-bottom: 1px dashed red; /* Sets a 1px dashed red bottom border */
+
+    /* Spacing Properties */
+    margin: 10px 20px; /* 10px top/bottom margin, 20px left/right margin */
+    padding: 15px; /* 15px padding on all sides */
+
+    /* Text Alignment and Indentation */
+    vertical-align: middle; /* Aligns the element vertically in the middle (if applicable, e.g., for inline elements) */
+    text-indent: 50px; /* Indents the first line of text by 50 pixels */
+
+    /* Text Wrapping (modern and older versions) */
+    overflow-wrap: break-word; /* Breaks words to prevent overflow (modern) */
+    word-wrap: break-word; /* For older browser compatibility (legacy of overflow-wrap) */
+
+    /* WebKit-specific Text Stroke (for browsers like Chrome, Safari) */
+    -webkit-text-stroke: 1px green; /* Adds a 1px green stroke around text */
+    color: black;
+}
+
+
+p {
+    text-indent: 20px;
+    line-height: 1.6; /* Improves readability */
+    margin-bottom: 1em;
+}
