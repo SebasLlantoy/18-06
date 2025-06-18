@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal con Botones</title>
+    <style>
+        /* Estilos CSS para el cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex; /* Usa flexbox para centrar y organizar los botones */
+            flex-direction: column; /* Apila los elementos verticalmente */
+            align-items: center; /* Centra horizontalmente */
+            justify-content: center; /* Centra verticalmente */
+            min-height: 100vh; /* Ocupa al menos el 100% de la altura de la ventana */
+            margin: 0;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-sizing: border-box; /* Incluye padding en el tamaño total */
+        }
+
+        /* Estilos para el contenedor de botones */
+        .boton-container {
+            display: grid; /* Usa grid para una cuadrícula de botones */
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Columnas responsivas */
+            gap: 15px; /* Espacio entre los botones */
+            max-width: 900px; /* Ancho máximo del contenedor */
+            width: 100%; /* Ocupa todo el ancho disponible hasta el max-width */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos base para todos los botones */
+        .boton {
+            display: block; /* Para que cada botón ocupe su propia línea si es necesario */
+            width: 100%; /* Asegura que los botones llenen su espacio en la cuadrícula */
+            padding: 15px 25px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none; /* Elimina el subrayado de los enlaces */
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos al pasar el mouse por encima del botón */
+        .boton:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px); /* Un pequeño efecto de levantamiento */
+        }
+
+        /* Estilos al hacer click en el botón */
+        .boton:active {
+            background-color: #004085;
+            transform: translateY(0); /* Vuelve a su posición normal */
+        }
+
+        /* Colores específicos para algunos botones (opcional) */
+        .boton.rojo { background-color: #dc3545; }
+        .boton.rojo:hover { background-color: #c82333; }
+
+        .boton.verde { background-color: #28a745; }
+        .boton.verde:hover { background-color: #218838; }
+
+        .boton.naranja { background-color: #fd7e14; }
+        .boton.naranja:hover { background-color: #e06d0b; }
+
+        .boton.morado { background-color: #6f42c1; }
+        .boton.morado:hover { background-color: #5a359c; }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a Nuestra Página Principal</h1>
+    <p>Haz clic en cualquiera de los botones para navegar a diferentes secciones.</p>
+
+    <div class="boton-container">
+        <a href="ejercicio013.html" class="boton">Ir a Página 1</a>
+        <a href="ejercicio14.html" class="boton rojo">Ir a Página 2</a>
+        <a href="ejercicio15.html" class="boton verde">Ir a Página 3</a>
+        <a href="ejercicio16.html" class="boton">Ir a Página 4</a>
+        <a href="ejercicio17.html" class="boton naranja">Ir a Página 5</a>
+        <a href="ejercicio18.html" class="boton">Ir a Página 6</a>
+        <a href="ejercicio19.html" class="boton morado">Ir a Página 7</a>
+        <a href="ejercicio20.html" class="boton">Ir a Página 8</a>
+        <a href="ejercicio21.html" class="boton rojo">Ir a Página 9</a>
+        <a href="ejercicio22.html" class="boton verde">Ir a Página 10</a>
+    </div>
+
+    <p style="margin-top: 30px; color: #555;">Recuerda crear los archivos HTML para cada página (pagina1.html, pagina2.html, etc.).</p>
+
+</body>
+</html>
